@@ -9,16 +9,16 @@ a:hover {
   color: black;
 }
 
-/* Custom default button */
+/* Custom default button
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: rgb(248, 237, 237);
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: rgba(114, 107, 107, 0.507);
+/*  background-color: rgba(114, 107, 107, 0.507);
   border: .05rem solid rgb(0, 0, 0);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+} *
 
 
 /*
@@ -95,7 +95,7 @@ body {
 .cover {
   padding: 0 1.5rem;
 }
-.cover .btn-lg {
+.cover  {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
@@ -117,8 +117,8 @@ body {
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 60px;
+  font-size: 40px;
+  width: 80px;
   text-align: center;
   text-decoration: none;
 }
