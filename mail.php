@@ -1,4 +1,3 @@
-
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -27,7 +26,7 @@ if ($message === ''){
   exit();
 }
 $content="From: $name \nEmail: $email \nMessage: $message";
-$recipient = "gla.davis89@gmail.com";
+$recipient = "youremail@here.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
