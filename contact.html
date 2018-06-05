@@ -15,7 +15,9 @@
     <link href="assets/css/cover.css" rel="stylesheet">
     <style>
       #body {
-  background: url("assets/images/coloradoRiver.jpg");
+  background-image: url("assets/images/coloradoRiver.jpg");
+  
+  height: 100%;
 }
     </style>
   </head>
@@ -47,14 +49,14 @@
             <div class="row">
         
                 <!--Grid column-->
-                <div class=" offset-2 col-md-8 col-xl-9">
+                <div class=" container col-md-8 col-xl-9">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
         
                         <!--Grid row-->
                         <div class="row">
         
                             <!--Grid column-->
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <div class="md-form">
                                     <input type="text" id="name" name="name" class="form-control">
                                     <label for="name" class="">Your name</label>
@@ -63,7 +65,7 @@
                             <!--Grid column-->
         
                             <!--Grid column-->
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <div class="md-form">
                                     <input type="text" id="email" name="email" class="form-control">
                                     <label for="email" class="">Your email</label>
@@ -76,7 +78,7 @@
         
                         <!--Grid row-->
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-md-12">
                                 <div class="md-form">
                                     <input type="text" id="subject" name="subject" class="form-control">
                                     <label for="subject" class="">Subject</label>
@@ -89,7 +91,7 @@
                         <div class="row">
         
                             <!--Grid column-->
-                            <div class="col-md-10">
+                            <div class="col-md-12">
         
                                 <div class="md-form">
                                     <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
@@ -102,15 +104,15 @@
         
                     </form>
         
-                    <div class="center-on-small-only offset-7">
+                    <div class="col-md-12">
                         <a class="btn btn-primary" onclick="validateForm()" >Send</a>
                     </div>
                     <div id="status"></div>
                 </div>
                 <!--Grid column-->
-        
+         </div>
                 <!--Grid column-->
-                <div class="offset-4 col-md-4 col-xl-3 my-4">
+                <div class="col-md-12">
                     <ul class="contact-icons">
                         <li><i class="fa fa-map-marker fa-2x"></i>
                             <p>Tempe, AZ 85282, USA</p>
@@ -127,7 +129,7 @@
                 </div>
                 <!--Grid column-->
         
-            </div>
+           
         
         </section>
         <!--Section: Contact v.2-->
