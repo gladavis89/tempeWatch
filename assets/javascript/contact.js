@@ -1,7 +1,7 @@
 function validateForm() {
   
 
-
+    document.getElementById('status').innerHTML = "Sending...";
 formData = {
     'name': $('input[name=name]').val(),
     'email': $('input[name=email]').val(),
