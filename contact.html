@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -7,55 +9,66 @@
     <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
 
     <title>Tempe Watch</title>
-
+    <link href="assets/css/reset.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     <link href="assets/css/cover.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-      #body {
-  background-image: url("assets/images/coloradoRiver.jpg");
-  
-  height: 100%;
-}
+        #body {
+            background: url("assets/images/img_3000.jpg");
+            background-color: black;
+            background-size: cover;
+        }
     </style>
-  </head>
+</head>
 
-  <body id="body" class="text-center"><div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;"><div data-reactroot="" class="resolved" style="all: initial;"></div></div>
+<body id="body" class="text-center">
+    <div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;">
+        <div data-reactroot="" class="resolved" style="all: initial;"></div>
+    </div>
 
     <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column" id="panel">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Tempe Watch</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="hotDeals.html">Hot Deals</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="aboutMe.html">About Me</a>
-            <a class="nav-link active" href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </header>
+        <header class="masthead mb-auto">
+            <div class="inner container-fluid">
+                <div class="row">
+                    <img id="logo" src="assets/images/Logos/logo.jpg" style="width: 100px; height: 70px;" />
+                    <h3 class="masthead-brand col-lg-1">Tempe Watch</h3>
 
-      <section class="section">
+                    <div class=" col-lg-9" id="bar">
+                            <nav class="nav nav-masthead ">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="hotDeals.html">Deals &amp; Events</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="aboutMe.html">About Me</a>
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
 
             <!--Section heading-->
             <h2 class="section-heading h1 pt-4">Contact us</h2>
             <!--Section description-->
             <p class="section-description">Questions? Please contact us directly.</p>
-        
+
             <div class="row">
-        
+
                 <!--Grid column-->
                 <div class=" container col-md-8 col-xl-9">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-        
+
                         <!--Grid row-->
                         <div class="row">
-        
+
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form">
@@ -64,7 +77,7 @@
                                 </div>
                             </div>
                             <!--Grid column-->
-        
+
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form">
@@ -73,10 +86,10 @@
                                 </div>
                             </div>
                             <!--Grid column-->
-        
+
                         </div>
                         <!--Grid row-->
-        
+
                         <!--Grid row-->
                         <div class="row">
                             <div class="col-md-12">
@@ -87,77 +100,91 @@
                             </div>
                         </div>
                         <!--Grid row-->
-        
+
                         <!--Grid row-->
                         <div class="row">
-        
+
                             <!--Grid column-->
                             <div class="col-md-12">
-        
+
                                 <div class="md-form">
                                     <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
                                     <label for="message">Your Message</label>
                                 </div>
-        
+
                             </div>
                         </div>
                         <!--Grid row-->
-        
+
                     </form>
-        
+
                     <div class="col-md-12">
-                        <a class="btn btn-primary" onclick="validateForm()" >Send</a>
+                        <a class="btn btn-primary" onclick="validateForm()">Send</a>
                     </div>
                     <div id="status"></div>
                 </div>
                 <!--Grid column-->
-         </div>
-                <!--Grid column-->
-               
-                <!--Grid column-->
-        
-           
-        
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+
+
+
         </section>
         <br>
-        <div class="container">
+        <div class="container" id="contact">
             <ul class="contact-icons container-fluid ">
-                <li><i class="fa fa-map-marker fa-2x"> Tempe, AZ 85282, USA  </i>
+                <li>
+                    <i class="fa fa-map-marker fa-2x"> Tempe, AZ 85282, USA </i>
                     <br>
                 </li>
-<br>
-                <li><i class="fa fa-phone fa-2x"> (480) 217-9507</i>
-                    
+                <br>
+                <li>
+                    <i class="fa fa-phone fa-2x"> (480) 217-9507</i>
+
                 </li>
-<br>
-                <li><i class="fa fa-envelope fa-2x"> robert@tempewatch.com</i>
-                    
+                <br>
+                <li>
+                    <i class="fa fa-envelope fa-2x"> robert@tempewatch.com</i>
+
                 </li>
             </ul>
         </div>
         <!--Section: Contact v.2-->
-        
-                    
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Tempe Watch website created by GarrettLee A Davis -2018</p>
-        </div>
-      </footer>
+
+
+        <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    
+                  <div class="row justify-content-center">
+                      <img  id="equal" src="assets/images/equal.jpg"/>  
+                  <p>Website created by
+          
+                    <a href="https://dtechdev.com">GarrettLee A Davis</a>.</p>
+                    </div>
+                </div>
+              </footer>
     </div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assets/javascript/contact.js" ></script>
-                    
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/contact.js"></script>
 
-<div id="i4c-dialogs-container"></div>
+
+
+    <div id="i4c-dialogs-container"></div>
 </body>
+
 </html>

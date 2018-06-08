@@ -1,64 +1,140 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+<html lang="en">
 
-    <title>Tempe Watch</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="assets/css/cover.css" rel="stylesheet">
-    <style>
-      #body {
-  background: url("assets/images/coloradoRiver.jpg");
-}
-    </style>
-  </head>
+  <title>Tempe Watch</title>
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-  <body id="body" class="text-center"><div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;"><div data-reactroot="" class="resolved" style="all: initial;"></div></div>
+  <link href="assets/css/cover.css" rel="stylesheet">
+  <style>
+    #body {
+      background: url("assets/images/img_3000.jpg");
+      background-color: black;
+      background-size: cover;
+    }
+  </style>
+</head>
 
-    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column" id="panel">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Tempe Watch</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="hotDeals.html">Hot Deals</a>
-            <a class="nav-link active" href="blog.html">Blog</a>
-            <a class="nav-link" href="aboutMe.html">About Me</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </nav>
+<body id="body" class="text-center">
+  <div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;">
+    <div data-reactroot="" class="resolved" style="all: initial;"></div>
+  </div>
+
+  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column" id="panel">
+    <header class="masthead mb-auto">
+      <div class="inner container-fluid">
+        <div class="row">
+          <img id="logo" src="assets/images/Logos/logo.jpg" style="width: 100px; height: 70px;" />
+          <h3 class="masthead-brand col-lg-1">Tempe Watch</h3>
+
+          <div class=" col-lg-9" id="bar">
+            <nav class="nav nav-masthead ">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="hotDeals.html">Deals &amp; Events</a>
+              <a class="nav-link active" href="blog.html">Blog</a>
+              <a class="nav-link" href="aboutMe.html">About Me</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+              
+            </nav>
+            
+          </div>
         </div>
-      </header>
-
-      <main role="main" class="inner cover ">
-        <h1 class="cover-heading">Coming soon!</h1>
-        <p class="lead"></p>
+      </div>
+    </header>
+    <div class="container-fluid">
+    <div class="row">
+      <main role="main" class="inner cover col-lg-7">
+        <h3 class="cover-heading" id="title"></h3>
         
+        <div id="video-container">
+          <iframe  id="youtube_video" frameborder="0" allowfullscreen></iframe>
+          <p  id="date"></p>
+        </div>
+        
+        <div id="desc"></div>
       </main>
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Tempe Watch website created by GarrettLee A Davis -2018</p>
-        </div>
-      </footer>
+      <div class="col-lg my-4">
+        <h4>See More Videos</h4>
+        
+        <p>
+          <a href="https://www.youtube.com/channel/UCZ64DgwRY1lljYOfLvVg3Rw" target="blank" class="m-4 fa fa-youtube-square" id="youtube"> 
+          </a>
+        </p>
+        <p>Visit Us on Youtube!</p>
+      </div>
     </div>
+  </div>
+    <br>
 
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+          
+        <div class="row justify-content-center">
+            <img  id="equal" src="assets/images/equal.jpg"/>  
+        <p>Website created by
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+          <a href="https://dtechdev.com">GarrettLee A Davis</a>.</p>
+          </div>
+      </div>
+    </footer>
   
+  </div>
 
-<div id="i4c-dialogs-container"></div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+
+
+
+  <script>
+    var channelID = "UCZ64DgwRY1lljYOfLvVg3Rw";
+    $.getJSON(
+      'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' +
+      channelID,
+      function (data) {
+        var link = data.items[0].link;
+        var id = link.substr(link.indexOf("=") + 1);
+        $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&showinfo=1&rel=1");
+
+      });
+
+    $.ajax({
+      url: "https://www.googleapis.com/youtube/v3/videos?key=AIzaSyDIFa3v-14EH0ClhmERZCf3HpFaagyuBNQ&part=snippet&id=3VGT5bI_5gg",
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+      $("#title").html(response.items[0].snippet.title);
+      $("#desc").html(response.items[0].snippet.localized.description);
+      var date = moment(response.items[0].snippet.publishedAt).format("MMMM D, YYYY");
+      $("#date").html(date);
+      console.log(date)
+    })
+  </script>
+
+  <div id="i4c-dialogs-container"></div>
 </body>
+
 </html>
